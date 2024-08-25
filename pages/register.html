@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>註冊｜Vivre 訂閱生活</title>
+  </head>
+  <body class="bg-primary">
+    <%- include('./layout/header'); -%>
+    <section class="py-60-xl-100">
+      <div class="bg-white p-4 p-xl-5 rounded-xl-3 border-primary-300 maw-630px mx-auto ">
+        <h2 class="fs-4 text-teal font-weight-bold mb-4 mb-xl-5">註冊</h2>
+        <form>
+          <div class="mb-3">
+            <label for="account" class="form-label text-gray-800 font-weight-bold mb-2">會員帳號</label>
+            <input name="account" type="account" class="form-control input-custom rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="請輸入會員帳號">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label text-gray-800 font-weight-bold mb-2">密碼</label>
+            <input name="password" type="password" class="form-control input-custom rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="請輸入密碼">
+          </div>
+          <div class="mb-3 mb-xl-5">
+            <label for="email" class="form-label text-gray-800 font-weight-bold mb-2">電子信箱</label>
+            <input name="email" type="email" class="form-control input-custom rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="請輸入電子信箱">
+          </div>
+          <button
+          type="submit"
+            class="btn-teal text-decoration-none fs-content w-100 d-block w-xl-auto rounded-pill"
+          >
+          立即註冊
+            <i class="bi bi-arrow-right py-4"></i>
+          </button>
+        </form>
+        <div class="py-4 py-xl-5 d-flex flex-nowrap deco-double-line align-items-center">
+          <p class="fs-6 font-wight-bold text-gray-500 d-inline-block text-nowrap px-3">或以其他方式註冊</p>
+        </div>
+        <a
+          href="#"
+            class="btn-gray text-decoration-none w-100 d-flex justify-content-center align-items-center w-xl-auto rounded-pill mb-2"
+          >
+          <img src="../assets/images/icons-google.png" alt="icon-google" class="me-2">
+          使用 Google 註冊
+        </a>
+        <a
+          href="#"
+            class="btn-gray text-decoration-none w-100 d-flex justify-content-center align-items-center w-xl-auto rounded-pill"
+          >
+          <img src="../assets/images/icons-facebook.png" alt="icon-facebook" class="me-2">
+          使用 Facebook 註冊
+        </a>
+        <div class="mt-4 mt-xl-5 text-center">
+          <span class="fs-content font-weight-black text-dark me-2">已經是會員了？ </span>
+          <a
+                href=""
+                class="text-decoration-none text-teal-dark--hover"
+              >
+                <span
+                  class="text-teal font-weight-black fs-content"
+                  >點此登入</span
+                >
+  
+              </a>
+        </div>
+      </div>
+      
+    </section>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

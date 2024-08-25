@@ -1,4 +1,56 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.nav{
+  height: 60px;
+}
+.logo {
+  display: block;
+  a {
+    background: url(../../assets/images/logo.svg) center center no-repeat;
+    background-size: contain;
+    width: 68px;
+    height: 20px;
+  }
+  @include md {
+    a {
+      width: 96px;
+      height: 28px;
+    }
+  }
+}
+.toggle-btn {
+  font-size: 24px;
+  width: 48px;
+  height: 48px;
+}
+
+/* 隱藏選單內容 */
+.menu-content {
+  @include xs-to-md {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $primary;
+  }
+  .text-color-focus-change {
+    color: $gray-300;
+    transition: color 0.3s ease;
+  }
+  .focused {
+    color: $dark;
+  }
+}
+.nav-items{
+  color: $gray-800;
+  padding: 12px;
+  @include xl {
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+    &:hover, &:active{
+      color: $white;
+      background-color: $teal ;
+      border-radius: 50px;
+    }
+  }
 }
