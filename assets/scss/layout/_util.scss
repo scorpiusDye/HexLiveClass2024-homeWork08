@@ -286,8 +286,8 @@ select:focus {
 .maw-630px{
   max-width: 630px;
 }
-.rounded-xl-3{
-   @include xl {
-    border-radius:var(--bs-border-radius-lg) !important ;
-   }
+.rounded-md-3{
+  @include md {
+   border-radius:var(--bs-border-radius-lg) !important ;
+  }
 }
