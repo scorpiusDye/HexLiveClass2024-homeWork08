@@ -1,25 +1,30 @@
 .nav{
-  height: 60px;
+  height: 64px;
 }
 .logo {
   display: block;
   a {
-    background: url(../../assets/images/logo.svg) center center no-repeat;
+    background: url(../../assets/images/logo.png) center center no-repeat;
     background-size: contain;
-    width: 68px;
+    width: 125px;
     height: 20px;
   }
   @include md {
     a {
-      width: 96px;
-      height: 28px;
+      width: 200px;
+      height: 32px;
     }
   }
 }
 .toggle-btn {
   font-size: 24px;
   width: 48px;
-  height: 48px;
+  height: 40px;
+}
+@include xl {
+  .nav{
+    height: 94px;
+  }
 }
 
 /* 隱藏選單內容 */

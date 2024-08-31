@@ -1,4 +1,16 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.bg-footer{
+  background-color: #282828;
+}
+.border-radius-top-xxl{
+  border-top-left-radius: $border-radius-xxl;
+  border-top-right-radius: $border-radius-xxl;
+}
+.logo-footer {
+  display: block;
+  a {
+    background: url(../../assets/images/logo-white.png) center center no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 32px;
+  }
 }
