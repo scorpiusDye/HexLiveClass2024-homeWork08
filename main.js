@@ -1,7 +1,21 @@
 import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-//nav-menu
+
+//content-sticky-bg
+document.addEventListener("scroll", function () {
+  const anchorList = document.querySelector(".bg-sticky-transparent");
+  if (anchorList.getBoundingClientRect().top === 0) {
+    anchorList.classList.add("is-sticky");
+  } else {
+    anchorList.classList.remove("is-sticky");
+  }
+});
+
+
+
+
+//nav-menu 開關
 const toggleBtn = document.querySelector(".toggle-btn");
 const toggleIcon = document.querySelector(".toggle-icon");
 const menuContent = document.querySelector(".menu-content");

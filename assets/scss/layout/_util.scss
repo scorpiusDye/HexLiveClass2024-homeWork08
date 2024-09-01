@@ -10,6 +10,18 @@
 .bg-white {
   background-color: $white;
 }
+.bg-primary-100 {
+  background-color: $blue-100;
+}
+.bg-danger-100 {
+  background-color: $red-100;
+}
+.bg-gray-100 {
+  background-color: $gray-100 !important;
+}
+.bg-gray-400 {
+  background-color: $gray-400 !important;
+}
 .border-gray-400 {
   border-color: $gray-400 !important;
 }
@@ -31,51 +43,38 @@
 .font-weight-bold{
   font-weight: bold;
 }
-// .text-teal {
-//   color: $teal;
-// }
-// .text-teal-dark{
-//   color: #406C55;
-// }
-// .border-light-teal{
-//   border-color: #E0EFDE !important;
-// }
-// .border-primary-300{
-//   border: 1px solid $primary-300 !important;
-// }
-// .btn-teal {
-//   background-color: $teal;
-//   color: $white;
-//   padding: 12px 20px;
-//   border: none;
-//   transition: background-color 0.3s ease;
-//   &:hover,
-//   &:active {
-//     background-color: $teal-dark;
-//   }
-// }
-// .btn-gray {
-//   background-color: $gray-100;
-//   color: $gray-600;
-//   padding: 12px 20px;
-//   border: none;
-//   transition: background-color 0.3s ease;
-//   &:hover,
-//   &:active {
-//     background-color: $teal;
-//     color: $white;
-//   }
-// }
-// .w-306px{
-//   @include xs-to-md {
-//   width: 306px;
-//   }
-// }
+.w-16px {
+  width: 16px;
+}
+.h-16px {
+  height: 16px;
+}
+.w-24px {
+  width: 24px;
+}
+.h-24px {
+  height: 24px;
+}
 .w-40px {
   width: 40px;
 }
 .h-40px {
   height: 40px;
+}
+.w-44px {
+  width: 44px;
+}
+.h-44px {
+  height: 44px;
+}
+.w-60px {
+  width: 60px;
+}
+.h-60px {
+  height: 60px;
+}
+.w-56px {
+  width: 56px;
 }
 .w-xl-425px {
   @include xl {
@@ -87,9 +86,19 @@
     height: 64px;
   }
 }
+.w-xl-100 {
+  @include xl {
+    width: 100%;
+  }
+}
 .border-xl-bottom {
   @include xl {
-    border-bottom: 1px solid $gray-500;
+    border-bottom: 1px solid $gray-400;
+  }
+}
+.border-xl-right{
+  @include xl {
+    border-right: 1px solid $gray-400;
   }
 }
 .ls-2 {
@@ -104,97 +113,20 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-// .ratio-custom-card {
-//   @include xs-to-md {
-//     --bs-aspect-ratio: 24%;
-//   }
-//   @include xl {
-//     --bs-aspect-ratio: 66%;
-//   }
-// }
-
+.ratio-intro-banner {
+  @include xs-to-md {
+    --bs-aspect-ratio: 120%;
+  }
+  @include xl {
+    --bs-aspect-ratio: 56%;
+  }
+}
 .radius-left-top-right-bottom {
   border-radius: 20px 0 20px 0;
 }
-
-//hover
-@include xl {
-  .mask--hover {
-    &:after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      transition: all 0.3s ease;
-    }
-    &:hover,
-    &:focus {
-      &:after {
-        background-color: rgba(33, 37, 41, 0.4);
-      }
-    }
-  }
-  .img-opacity-70--hover {
-    img {
-      opacity: 1;
-      transition: all 0.3s ease;
-    }
-    &:hover img,
-    &:focus img {
-      opacity: 0.7;
-    }
-  }
+.text-line-through{
+  text-decoration:line-through;
 }
-
-.primary-pill--hover{
-  @include xl {
-    transition: all 0.3s ease;
-    &:hover, &:active{
-      background-color: $primary ;
-      border-radius: 50px;
-    }
-  }
-}
-.bg-primary--hover{
-  @include xl {
-    transition: background-color 0.3s ease;
-    &:hover, &:active{
-      background-color: $primary ;
-    }
-  }
-}
-// .text-teal--hover{
-//   transition: all 0.3s ease;
-//   @include xl {
-//     &:hover, &:focus {
-//     color: $teal !important;
-//     }
-
-//   }
-// }
-// .text-teal-dark--hover{
-//   transition: all 0.3s ease;
-//   @include xl {
-//   &:hover *, &:focus *{
-//     color: $teal-dark !important;
-//     }
-
-//   }
-// }
-// .label--hover{
-//   transition: all 0.3s ease;
-//   &:hover, &:focus {
-//     background-color: #E0EFDE;
-//   }
-//   &.active{
-//     background-color: #E0EFDE;
-//   }
-// }
 .text-gray-100 {
   color: $gray-100;
 }
@@ -210,59 +142,6 @@
 .text-gray-800 {
   color: $gray-800;
 }
-
-// .bg-primary-200{
-//   background-color:#FFFBE5 ;
-// }
-// .bg-primary-300{
-//   background-color: #EbE3DA;
-// }
-// .bg-gradient-black{
-//   background: linear-gradient(to top, rgba(33,37,41,1), rgba(33,37,41,.05));
-// }
-// .btn-slide {
-//   background-color: $white;
-//   border: 1px solid $gray-600;
-//   transition: background-color 0.3s ease;
-//   &:hover,
-//   &:active {
-//     background-color: $gray-600;
-//   }
-//   &:hover i, &:active i{
-//     color: $white;
-//   }
-// }
-// .btn-slide-disable{
-//   border: 1px solid $gray-300;
-//   i{
-//     color:$gray-300 ;
-//   }
-//   &:hover,
-//   &:active {
-//     background-color: $white;
-//     cursor:not-allowed
-//   }
-//   &:hover i, &:active i{
-//     color: $gray-300;
-//   }
-// }
-// .deco-line{
-//   width: 80px;
-//   height: 1px;
-//   background-color: $gray-600;
-// }
-// .deco-double-line{
-//   position: relative;
-//   &:before, &:after{
-//     content: "";
-//     position: relative;
-//     display: inline-block;
-//     width: 100%;
-//     height: 1px;
-//     background-color: $gray-300;
-//   }
-
-// }
 .px-0 {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -292,22 +171,76 @@
     margin-top: -64px;
   }
 }
-// .py-60-xl-100{
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-//   @include xl {
-//     padding-top: 100px;
-//     padding-bottom: 100px;
-//   }
-// }
 .white-space-nowrap {
   white-space: nowrap;
 }
-// .maw-630px{
-//   max-width: 630px;
-// }
-// .rounded-md-3{
-//   @include md {
-//    border-radius:var(--bs-border-radius-lg) !important ;
-//   }
-// }
+.bg-gradient-primary{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #E7F5FF 100%);
+}
+
+.fs-xl-16{
+  @include xl {
+    font-size: $font-sizes-base !important;
+  }
+}
+.fs-xl-20{
+  @include xl {
+    font-size: $font-sizes-base * 1.25 !important;
+  }
+}
+.fs-xl-32{
+  @include xl {
+    font-size: $font-sizes-base * 2 !important;
+  }
+}
+.fs-xl-48{
+  @include xl {
+    font-size: $font-sizes-base * 3 !important;
+  }
+}
+.mt-xl-n68{
+  @include xl {
+    margin-top: -68px !important;
+  }
+}
+.mask-white-gradient{
+  &:before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(180deg, rgba(#fff, 0) 0%, #FFFFFF 75%);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 300px;
+    z-index: 1;
+  }
+}
+.mx-n12{
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.z-5{
+  z-index: 5;
+}
+.bg-sticky-transparent{
+  &:before{
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  }
+}
+.is-sticky{
+  &:before{
+    opacity: 1;
+  }
+}
+.vh-100{
+  height: 100vh;
+}

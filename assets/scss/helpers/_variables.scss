@@ -76,10 +76,10 @@ $color-contrast-dark:      $black !default;
 $color-contrast-light:     $white !default;
 
 // fusv-disable
-$blue-100: tint-color($blue, 80%) !default;
+$blue-100: #E5F4FF; //tint-color($blue, 80%) !default;
 $blue-200: tint-color($blue, 60%) !default;
 $blue-300: tint-color($blue, 40%) !default;
-$blue-400: tint-color($blue, 20%) !default;
+$blue-400: #99cfff; //tint-color($blue, 20%) !default;
 $blue-500: $blue !default;
 $blue-600: shade-color($blue, 20%) !default;
 $blue-700: shade-color($blue, 40%) !default;
@@ -116,7 +116,7 @@ $pink-700: shade-color($pink, 40%) !default;
 $pink-800: shade-color($pink, 60%) !default;
 $pink-900: shade-color($pink, 80%) !default;
 
-$red-100: tint-color($red, 80%) !default;
+$red-100: #FFE0D7; //tint-color($red, 80%) !default;
 $red-200: tint-color($red, 60%) !default;
 $red-300: tint-color($red, 40%) !default;
 $red-400: tint-color($red, 20%) !default;
@@ -423,8 +423,11 @@ $spacers: (
   40: $spacer * 2.5,   //40px
   48: $spacer * 3,     //48px
   60: $spacer * 3.75,  //60px
+  72: $spacer * 4.5,   //72px
   80: $spacer * 5,     //80px
  100: $spacer * 6.25,  //100px
+ 120: $spacer * 7.5,   //120px
+ 160: $spacer * 10,   //160px
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -454,7 +457,7 @@ $body-secondary-bg:         $gray-200 !default;
 $body-tertiary-color:       rgba($body-color, .5) !default;
 $body-tertiary-bg:          $gray-100 !default;
 
-$body-emphasis-color:       $black !default;
+$body-emphasis-color:       $primary; //$black !default;
 
 // Links
 //
@@ -549,7 +552,7 @@ $border-widths: (
   5: 5px
 ) !default;
 $border-style:                solid !default;
-$border-color:                $gray-500 !default;
+$border-color:                $gray-400 !default;
 $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
@@ -637,7 +640,7 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 
 $line-height-base:            1.5 !default;
-$line-height-sm:              1.25 !default;
+$line-height-sm:              1.2 !default;
 $line-height-lg:              2 !default;
 
 $h1-font-size:                $font-size-base * 2.5 !default;
@@ -1200,7 +1203,7 @@ $nav-pills-link-active-color:       $component-active-color !default;
 $nav-pills-link-active-bg:          $component-active-bg !default;
 
 $nav-underline-gap:                 1rem !default;
-$nav-underline-border-width:        .125rem !default;
+$nav-underline-border-width:        4px; //.125rem !default;
 $nav-underline-link-active-color:   var(--#{$prefix}emphasis-color) !default;
 // scss-docs-end nav-variables
 

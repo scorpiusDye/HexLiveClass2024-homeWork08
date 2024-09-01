@@ -1,5 +1,10 @@
-.nav{
+.nav-header{
   height: 64px;
+  @include xl {
+      height: 94px;
+      border-radius: 50px;
+      box-shadow: 0px 2px 40px 0px rgba(#0068FF, 0.1);
+  }
 }
 .logo {
   display: block;
@@ -21,11 +26,7 @@
   width: 48px;
   height: 40px;
 }
-@include xl {
-  .nav{
-    height: 94px;
-  }
-}
+
 
 /* 隱藏選單內容 */
 .menu-content {

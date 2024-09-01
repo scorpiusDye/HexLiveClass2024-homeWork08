@@ -1,0 +1,31 @@
+.ic-teacher{
+  width: 60px;
+  height: 60px;
+  @include xl {
+    width: 80px;
+    height: 80px;
+  }
+}
+.rounded-bottom-240-xl{
+  @include xl {
+    border-radius: 0px 0px 240px 240px;
+  }
+}
+.sticky-content-shop{
+  position: sticky;
+  
+  @include xs-to-md{
+    bottom: 0;
+    margin-top: 24px;
+    z-index: 5;
+  }
+  @include xl{
+    top: 96px;
+  }
+  
+}
+.anchor-position{
+  position: absolute;
+  top: -70px;
+}
+

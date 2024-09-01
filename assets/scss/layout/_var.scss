@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: $line-height-base;
 }
 ol, ul {
 	list-style: none;
@@ -91,3 +91,42 @@ select:focus {
 .placeholder-gray-600::placeholder {
   color:$gray-600; 
 }
+.material-symbols-fill{
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+/*accordion icon 更換*/
+.accordion-button::after {
+  content: "\e313" ; //icon 名稱
+  font-family: "Material Icons" ; // 採用的 icon 庫
+  width: auto !important;
+  height: auto !important;
+  font-size: 24px;
+  color: #4b4b4b;
+  background-image: none;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+}
+.pagination .page-item {
+  margin-left: 4px;
+  margin-right: 4px;
+  
+} 
+.pagination .page-item a {
+  border-radius: 8px !important;
+  min-width: 32px;
+  padding-left: 4px;
+  padding-right: 4px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include xl {
+    min-width: 48px;
+    height: 48px;
+  }
+} 
