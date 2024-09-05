@@ -10,6 +10,16 @@
 .bg-white {
   background-color: $white;
 }
+.bg-xs-white{
+  @include xs-to-md {
+    background-color: $white;
+  }
+}
+.bg-xl-white{
+  @include xl {
+    background-color: $white;
+  }
+}
 .bg-primary-100 {
   background-color: $blue-100;
 }
@@ -42,6 +52,12 @@
 }
 .font-weight-bold{
   font-weight: bold;
+}
+.w-12px {
+  width: 12px;
+}
+.h-12px {
+  height: 12px;
 }
 .w-16px {
   width: 16px;
@@ -76,6 +92,22 @@
 .w-56px {
   width: 56px;
 }
+.w-80px{
+  width: 80px;
+}
+.h-80px {
+  height: 80px;
+}
+.w-xl-200px{
+  @include xl {
+    width: 200px;
+  }
+}
+.h-xl-200px{
+  @include xl {
+    height: 200px;
+  }
+}
 .w-xl-425px {
   @include xl {
     width: 425px;
@@ -89,6 +121,11 @@
 .w-xl-100 {
   @include xl {
     width: 100%;
+  }
+}
+.maw-xl-815px{
+  @include xl {
+    max-width: 815px;
   }
 }
 .border-xl-bottom {
@@ -163,12 +200,20 @@
 .t-0 {
   top: 0;
 }
+.mt-n40{
+  margin-top: -40px;
+}
 .l-16 {
   left: 16px;
 }
 .mt-xl-n8 {
   @include xl {
     margin-top: -64px;
+  }
+}
+.mt-xl-n80{
+  @include xl {
+    margin-top: -80px;
   }
 }
 .white-space-nowrap {
@@ -243,4 +288,22 @@
 }
 .vh-100{
   height: 100vh;
+}
+.top-16{
+  top: 16px;
+}
+.left-16{
+  left: 16px;
+}
+
+// .swiper-container {
+//   width: 100%;
+//   overflow: hidden;
+// }
+// .swiper-pagination {
+//   position: static;
+// }
+.swiper-pagination-bullet-active {
+  width: 24px;
+  border-radius: 20px;
 }

@@ -3,6 +3,10 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 @import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+// @import 'swiper/swiper-bundle.min.css';
 
 @import './layout/var.scss';
 @import './layout/util.scss';
@@ -11,6 +15,7 @@
 @import './layout/header.scss';
 @import './layout/footer.scss';
 @import './layout/content.scss';
+
 
 
 // @import './layout/header.scss';

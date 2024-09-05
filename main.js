@@ -1,6 +1,36 @@
 import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
+import Swiper from 'swiper';
+import { Pagination } from 'swiper/modules';
+const swiper = new Swiper(".swiper-container", {
+  slidesPerView: 1.2,
+  spaceBetween: 24,
+  
+  modules: [Pagination],
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      grid: {
+        rows: 2,
+        fill: "row"
+      }
+    },
+    1199: {
+      slidesPerView: 4,
+      grid: {
+        rows: 4,
+        fill: "row"
+      }
+    }
+  }
+});
+
+
 
 //content-sticky-bg
 document.addEventListener("scroll", function () {
@@ -15,7 +45,10 @@ document.addEventListener("scroll", function () {
 
 
 
-//nav-menu 開關
+
+
+
+//nav-menu 開關 (w6)
 const toggleBtn = document.querySelector(".toggle-btn");
 const toggleIcon = document.querySelector(".toggle-icon");
 const menuContent = document.querySelector(".menu-content");
@@ -33,7 +66,7 @@ toggleBtn.addEventListener("click", function () {
 });
 
 
-// nav 文字換色
+// nav 文字換色 (w6)
 const input = document.querySelector('.form-control');
 const span = document.querySelector('.text-color-focus-change');
 

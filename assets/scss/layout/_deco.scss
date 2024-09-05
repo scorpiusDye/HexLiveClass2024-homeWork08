@@ -29,7 +29,22 @@
     }
   }
 }
-
+.text-white--hover{
+  @include xl {
+    transition: all 0.3s ease;
+    &:hover, &:active{
+      color: $white ;
+    }
+  }
+}
+.border-primary--hover{
+  @include xl {
+    transition: all 0.3s ease;
+    &:hover, &:active{
+      border-color: $primary !important;
+    }
+  }
+}
 .primary-pill--hover{
   @include xl {
     transition: all 0.3s ease;
