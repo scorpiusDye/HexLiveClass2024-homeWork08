@@ -159,11 +159,42 @@
         </li>
       </ul>
     </section>
+
     <section
       class="anchor-list border-bottom overflow-x-hidden position-sticky z-5 top-0 bg-sticky-transparent"
     >
       <div class="container mx-auto">
-        <ul class="nav nav-underline nav-anchor d-flex flex-nowrap scroll-x-blk vw-xs-100">
+        <ul class="nav nav-underline nav-anchor d-flex flex-nowrap scroll-x-blk vw-xs-100" id="navbar-example2">
+          <li class="nav-item me-24 me-xl-32">
+            <a
+              class="nav-link py-16 white-space-nowrap text-primary--hover"
+              href="#intro"
+              >課程介紹</a
+            >
+          </li>
+          <li class="nav-item me-24 me-xl-32">
+            <a
+              class="nav-link py-16 white-space-nowrap text-primary--hover"
+              href="#unit"
+              >預計單元</a
+            >
+          </li>
+          <li class="nav-item me-24 me-xl-32">
+            <a
+              class="nav-link py-16 white-space-nowrap text-primary--hover"
+              href="#teacher"
+              >關於講師</a
+            >
+          </li>
+          <li class="nav-item me-24 me-xl-32">
+            <a
+              class="nav-link py-16 white-space-nowrap text-primary--hover"
+              href="#qa"
+              >購課前問答</a
+            >
+          </li>
+        </ul>
+        <!-- <ul class="nav nav-underline nav-anchor d-flex flex-nowrap scroll-x-blk vw-xs-100">
           <li class="nav-item me-24 me-xl-32">
             <a
               class="nav-link py-16 white-space-nowrap text-primary--hover active"
@@ -193,15 +224,16 @@
               >購課前問答</a
             >
           </li>
-        </ul>
+        </ul> -->
       </div>
     </section>
+
     <section
       class="main-content container mx-auto mt-40 mt-xl-80 mb-xl-160"
     >
-      <div class="row">
-        <div class="col-xl-8 pe-xl-40">
-          <ol>
+      <div class="row" >
+        <div class="col-xl-8 pe-xl-40" style="position:relative;overflow-y:auto;">
+          <ol  data-bs-target="#navbar-example2" data-bs-smooth-scroll="true" class="scrollspy-example">
             <li class="mb-48 position-relative">
               <span class="anchor-position" id="intro"></span>
               <h2
@@ -274,7 +306,7 @@
                 class="accordion accordion-flush mt-4 gy-3"
                 id="accordionPanelsStayOpenExample"
               >
-                <div class="accordion-item rounded-bottom-3 border-0 mb-16">
+                <div class="accordion-item border-0 mb-16">
                   <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                     <button
                       class="accordion-button p-24 rounded-top-2 bg-gray-400"
@@ -387,7 +419,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item rounded-bottom-3 border-0 mb-16">
+                <div class="accordion-item border-0 mb-16">
                   <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                     <button
                       class="accordion-button collapsed p-24 rounded-top-2 bg-gray-400"
@@ -476,7 +508,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item rounded-bottom-3 border-0 mb-16">
+                <div class="accordion-item border-0 mb-16">
                   <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                     <button
                       class="accordion-button collapsed p-24 rounded-top-2 bg-gray-400"
@@ -570,7 +602,7 @@
             <li class="mb-48 position-relative" >
               <span class="anchor-position" id="teacher"></span>
               <h2
-                class="fs-20px font-weight-bold deco-flower d-flex align-items-center mb-16 mb-xl-24"
+                class="fs-20 font-weight-bold deco-flower d-flex align-items-center mb-16 mb-xl-24"
               >
                 關於講師
               </h2>
@@ -764,8 +796,8 @@
             </nav>
           </div>
         </div>
-        <div class="col-xl-4 sticky-content-shop">
-          <div class="p-16 py-xl-24 bg-white rounded-xl-3 shadow mx-n12 mx-xl-0 sticky-content-shop">
+        <div class="col-xl-4 sticky-xs sticky-content-shop">
+          <div class="p-16 py-xl-24 bg-white rounded-xl-3 shadow mx-n12 mx-xl-0  sticky-xl sticky-content-shop">
             <div class="text-dark pb-16 border-bottom font-weight-bold  d-none d-xl-block">
               購買本堂課
             </div>
@@ -817,8 +849,15 @@
         </div>
       </div>
     </section>
+
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script>
+      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#navbar-example2'
+});
+    </script>
   </body>
 </html>

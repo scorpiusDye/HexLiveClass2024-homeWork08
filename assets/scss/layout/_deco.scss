@@ -95,6 +95,14 @@
     }
   }
 }
+.tansform-y--hover{
+  transition: translate 0.3s ease;
+  @include xl {
+    &:hover, &:focus {
+      transform:translate(100px , 200px); 
+    }
+  }
+}
 .nav-anchor a{
   color: $dark !important;
   &.active,
